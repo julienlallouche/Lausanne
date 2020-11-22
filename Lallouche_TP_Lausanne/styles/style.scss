@@ -1,0 +1,251 @@
+body, a, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url("/img/lauzanne_img.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+
+    header{
+        background-color:#000000ba;
+        height: 80px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 19px;
+        padding-left: 19px;
+        height: 100%;
+    }
+
+    .container img{
+        width: 87px;
+    }
+
+    .icon_temps, nav{
+        display: none;
+    }
+
+    .container a{
+        padding-left: 17px;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a.titre{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container h1{
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: monospace;
+        
+    }
+
+    /*container - selection */
+
+    .container_selection{
+  
+            ul {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            a{
+                background-color: #000000ba;
+                padding: 22px;
+                margin-bottom: 1px;
+                width: 88%;
+                color: white;
+                font-size: 23px
+            }
+
+        
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+
+    main{
+        
+    .container {
+
+        img{
+            width: 133px;
+        }
+
+        h1{
+            font-size: 32px;
+        }
+
+        h1:hover{
+            text-shadow: 1px 2px 2px #1f93de;
+            transition: all .2s linear;
+        }
+
+        .icons{
+            display: flex;
+            font-size: 22px;
+
+            a{
+                padding-right: 17px;
+            
+            }
+
+            a:hover{
+                color:#1f93de ;
+                transition: all .2s linear;
+            }
+        }
+
+        .icon_temps{
+            display: inherit;
+
+            span.barre{
+                padding-right: 10px;
+            }
+        }
+    }
+   
+
+    /*Réseaux*/
+    nav{
+        display: inherit;
+
+        span{
+            display: none;
+            background-color: #0f4061;
+            padding: 16px;
+        }
+
+
+        i{
+            background-color: #1f93de;
+            padding: 17px;
+            width: 20px;
+            font-weight: 400;
+            height: 18px;
+            padding: 18px;
+            font-size: 25px
+        }
+
+        a{
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            background-color: #0f4061;
+            
+            
+            i{
+                background-color:#0f4061 ;
+                
+                
+            }
+            span{
+                display: block;
+                background-color:#0f4061 ;
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 20px;
+
+            }
+        }
+
+        }
+
+        .container_selection{
+            ul {
+                width: 85%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+            }
+
+            a{
+                background-color: #000000ba;
+                padding: 22px;
+                margin: 0px 1px;
+                width: 88%;
+                color: white;
+                font-size: 19px;
+            }
+
+            a:hover{
+                background-color: #0f4061;
+                transition: all .2s linear;
+
+            }
+        
+        }
+    }
+   
+}
+
+@media screen and (min-width: 1280px){
+
+    main{
+
+    .container_selection{
+            ul {
+                width: 85%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+            }
+
+            a{
+                background-color: #000000ba;
+                padding: 22px;
+                margin: 0px 1px;
+                width: 88%;
+                color: white;
+                font-size: 23px;
+            }
+
+            a:hover{
+                background-color: #0f4061;
+                transition: all .2s linear;
+
+            }
+        
+        }
+    }
+
+}
+    /*
+0-480   
+481- 768
+769 -1279
+
+1280+*/
